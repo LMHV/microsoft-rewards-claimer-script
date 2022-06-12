@@ -17,7 +17,10 @@ Names = ['Robert Downey Jr.','Chris Hemsworth','Josh Brolin', 'Juan Antonio Bern
          'Josh Brolin','José García Insúa','Juan Carlos Tinoco','Thor','Chris Hemsworth','Iván Labanda',
          'Scarlett Johansson','Don Cheadle','Benedict Cumberbatch','Tom Holland','Chadwick Boseman',
          'Zoe Saldana','Karen Gillan','Tom Hiddleston','Paul Bettany','Elizabeth Olsen','Anthony Mackie',
-         'Sebastian Stan']
+         'Sebastian Stan','Megan fox', 'Ford', 'Volvo', 'Toyota', 'Mitsubishi','Volskwagen',
+         'Abarth', 'Alfa Romeo', 'Alpine', 'Aston Martin', 'Audi', 'Bentley', 'BMW', 'Borgward', 
+         'Bugatti', 'BYD', 'Cadillac', 'Caterham', 'Chevrolet', 'Citroën', 'Cupra', 'Dacia', 'Dodge', 
+         'Automobiles']
 
 if __name__ == '__main__':
 
@@ -29,5 +32,6 @@ if __name__ == '__main__':
         try:
             edgeBrowser.get('https://www.bing.com/search?q=' + Names[i])
             edgeBrowser.implicitly_wait(5)
+            time.sleep(5)
         except:
             pass
